@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway:wght@100;200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway:wght@100;200;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway:wght@100;200;500;600;700&display=swap');
+
+
+body, 
+h1, h2, h3, 
+h4, h5, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    min-height: 1000px;
+    background-color: #acb0b5;
+    background-image: url("./img/header-bg.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center;
+    /* background-size: cover, cover; */
+}
+.header-nav{
+    margin-left: 100px;
+    margin-right: 100px;
+    /* padding-top: 42px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-top: 42px;
+}
+
+
+.quotes-btn {
+    min-width: 200px;
+    min-height: 80px;
+    background-color: #000000;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: 600px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 8px;
+    border: none;
+    
+
+}
+.menu{
+    margin-top: 42px;
+}
+
+.menu-btn{
+        font-size: 15px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-right: none;
+        border-left: none;
+        background-color: transparent;
+        /* margin-top: 54px; */
+        min-width: 52px;
+        min-height: 42px;
+        
+
+}
+.banner{
+    padding-left: 604px;
+    padding-right: 64px;
+    padding-top: 225px;
+}
+  
+.big-title {
+    font-size: 200px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 10;
+  }
+  .little-title{
+    font-size: 58px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+
+  }
+
+  .text{
+      background-color: #ffffff;
+  }
+
+  .about{
+      padding-top: 70px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .about-title {
+      position: relative;
+        font-size: 60px;
+        font-family: "Raleway";
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-weight: 100;
+        padding-bottom: 108px;
+        margin-bottom: 108px;
+ }
+
+ .about-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 39px);
+    width: 78px;
+    height: 1px;
+    background-color: black;
+ }
+ .about-text{
+        width: 960px;
+        font-size: 20px;
+        font-family: "Raleway";
+        color: rgb(0, 0, 0);
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 45px;
+}
+
+.quotes {
+    height: 650px;
+    background-color: #ffe9e2;
+    background-image: url("./img/people-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.quotes-slider{
+    width: 700px;
+    padding-top: 133px;
+    /* padding-right: 100px; */
+}
+.slide{
+    padding-right: 100px;
+    display: none;
+    min-height: 400px;
+}
+
+.slide.open {
+    display: block;
+}
+
+.slide-text{
+        font-size: 36px;
+        font-family: "Raleway";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.333;
+        text-align: left;
+        margin-bottom: 60px;
+       
+}
+.slide-author{
+        font-size: 36px;
+        font-family: "Raleway";
+        color: rgb(0, 0, 0);
+        font-weight: 100;
+        line-height: 1.333;
+        text-align: left;
+}
+
+.slider-controls input[type=radio] {
+    display: none;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid black;
+}
+
+
+.quote-selected {
+    background-color: red;
+}
+
+/* #quote-radio-1:checked ~ label[for="quote-radio-1"] {
+    background-color: red;
+}
+#quote-radio-2:checked ~ label[for="quote-radio-2"] {
+    background-color: red;
+}
+#quote-radio-3:checked ~ label[for="quote-radio-3"] {
+    background-color: red;
+} */
+
+.reasons {
+
+         padding-bottom: 130px;
+         padding-top: 130px;
+}
+
+.reasons-title{
+        position: relative;
+        font-size: 60px;
+        font-family: "Raleway";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        margin-bottom: 165px; 
+        padding-bottom: 30px;
+
+}
+.reasons-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 78px;
+    height: 1px;
+    background-color: black;
+      
+}
+
+.reason {
+    padding-left: 40px;
+    padding-right: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/*
+ 2 * 1 = 2
+ 2 * 2 = 4
+ 2 * 3 = 6
+*/
+.reason:nth-child(2n) { /* рисуем правую рамку через один элемент */
+    border-right: 1px solid black;
+
+}
+/* последнему и предпоследнему добавим рамку снизу */
+.reason:nth-last-child(1), .reason:nth-last-child(2) {
+    border-bottom: 1px solid rgb(54, 231, 98);
+} 
+
+.reason-title{
+    margin-bottom: 40px;
+}
+
+.reasons-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 57px;
+
+
+
+}
+
+.reason-text{
+        font-size: 20px;
+        font-family: "Raleway";
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        margin-bottom: 40px;
+
+}
+.center-text{
+        text-align: center;
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-decoration: none;
+    text-align: center;
+    min-height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 4px;
+    
+      
+}
+ .btn:hover{
+     background-color: black;
+     color: white;
+ }
+
+ .hands{
+    height: 650px;
+    background-color: #19182c;
+    background-image: url("./img/hands-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+ }
+
+
+ .hands-quote{
+    padding-left: 281px;
+    padding-right: 281px;
+    padding-top: 200px;
+    padding-bottom: 240px;
+    font-size: 60px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+ }
+
+ .poster-title{
+    position: relative;
+    font-size: 60px;
+    font-family: "Raleway";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 165px; 
+    padding-bottom: 30px;
+ }
+
+ .poster-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 78px;
+    height: 1px;
+    background-color: black;
+      
+}
+.poster-title{
+    margin-bottom: 40px;
+}
+
+.poster {
+    padding-bottom: 130px;
+    padding-top: 130px;
+}
+
+.poster-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+}
+
+.poster-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.post-img1{
+    grid-row: span 2;
+}
+.post-img2 {
+    margin-bottom: 30px;
+}
+
+.post-img3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+      
+
+  
+
+
+  

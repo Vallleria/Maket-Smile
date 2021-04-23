@@ -1,0 +1,28 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* row-gap: 50px;
+    column-gap: 50px; */
+}
+
+.grid-item {
+    background-color: lightblue;
+    border: 1px dashed #eee;
+    min-height: 80px;
+    
+}
+
+.item1{ 
+    grid-row: span 2; 
+    margin-right: 30px;
+}
+
+.item2 {
+    grid-column: span 2;
+    margin-bottom: 30px;
+}
+
+.item3 {
+    margin-right: 10px;
+}
